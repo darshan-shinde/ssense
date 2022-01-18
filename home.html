@@ -10,9 +10,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <style>
         #navbar{
-            width: 100%;
-            height: 50px;
-            border: 1px solid transparent;
+            width:100%;
+            height:50px;
+            margin: auto;
+            /* border:1px solid black; */
+            /* padding-top:25px; */
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+    
+            
+        }
+        .navinner{
+            width:100%;
+            height:50px;
+            /* border:1px solid black; */
+            display:flex;
+            
+            /* margin-left:20px; */
+        }
+        .navinner>div{
+             margin-left:30px;
+            margin-top:15px;
+            margin-right: 10px;
+            justify-content:left;
+            /* justify-content:space-around; */
+            /* margin: auto; */
+            /* align-content:space-around; */
+        }
+        .navinner>div>a{
+            text-decoration: none;
+            color:black;
+            font-size:10px;
+            font-family:Inter;
+            font-weight:normal;
+        }
+        #title>div{
+            /* font-family: inter;
+            font-weight:lighter; */
+            border:1px solid transparent;
+            width:100px;
+            height:50px;
+            margin:auto;
+            
+        }
+        #title>div>a>img{
+            /* margin-top:15px; */
+            width:100%;
+            height:50px;
+            margin: auto;
+            /* margin-right: 100px; */
+        }
+        .navright{
+            width:100%;
+            height:50px;
+            /* border:1px solid black; */
+            display:flex;
+            
+            /* margin-left:20px; */
+        }
+        .navright>div{
+             margin-left:30px;
+            margin-top:15px;
+            margin-right: 40px;
+           
+        }
+        .navright>div>a{
+            text-decoration: none;
+            color:black;
+            font-size:10px;
+            font-family:Inter;
+            font-weight:normal;
+            
+
         }
         .h1main{
             width: 85%;
@@ -45,6 +114,7 @@
         .m2{
             font-family:inter;
             font-size: 19px;
+            margin-left: 10px;
             
         }
         .m3{
@@ -175,6 +245,26 @@
             margin-left:10px; 
             
         }
+        #m12{
+            font-family:Inter; 
+            font-size:95px;
+            margin:auto;
+            width:65%;
+        }
+        #m13{
+            font-family:'Times New Roman', Times, serif; 
+            font-size:65px;
+            margin:auto;
+            width:95%;
+            padding-top:40px;
+        }
+        #m14{
+            width:15%;
+            margin:auto;
+            font-family:'Times New Roman', Times, serif; 
+            font-size:65px;
+           
+        }
         .h5main{
             width:95%;
             height:600px;
@@ -223,11 +313,118 @@
             width:auto;
             height:130px;
         }
-       
+        .h8main{
+            /* margin: auto; */
+            margin-top:50px;
+            width:100%;
+            height:400px;
+            /* border: 1px solid black; */
+        }
+        #btn2{
+            width:20%;
+            margin:auto;
+            padding-top:50px;
+            
+        }
+        #btn2>button{
+            width:250px;
+            font-size:15px;
+            padding:15px 15px;
+            border:1px solid #333333;
+            border-radius: 10px;
+            height:45px;
+            color:#333333;
+            background-color: white;
+        }
+        #footer{
+            width:80%;
+            height:100px;
+            /* border:1px solid black; */
+            margin:auto;
+            padding-top:15px;
+            font-family:Inter;
+            font-weight:normal;
+        }
+      #footerupper{
+            width:80%;
+            display:flex;
+            margin:auto;
+        }
+        #footerupper>a{
+            text-decoration: none;
+            margin:auto;
+            padding-top: 30px;
+            font-size:9px;
+            color:black;
+            font-size:10px;
+            font-weight:normal;
+        }
+        #footerlower{
+            width:40%;
+            display:flex;
+            margin:auto;
+        }
+        #footerlower>a{
+
+            margin: auto;
+            padding-top:15px;
+           text-decoration: none;
+           color:gray;
+           font-size:1ch;
+           font-weight:normal;
+        }
+        #icons{
+            display:flex;
+        }
+        #icons>img{
+            /* margin-left:5px; */
+            margin: auto;
+            padding-top:30px;
+            padding-left: 5px;
+            width:15px;
+            height:15px
+        }
     </style>
 </head>
 <body>
-<div id="navbar"></div>
+    <div id="navbar">
+        <div class="navinner">
+            <div>
+             <a href="">MENSWARE</a>   
+            </div>
+            <div>
+                <a href="">WOMENSWARE</a> 
+            </div>
+            <div>
+                <a href="">EVERYTHING ELSE</a> 
+            </div>
+            <div>
+                <a href="">SALE</a> 
+            </div>
+            <div>
+                <a href="">SEARCH</a> 
+            </div>
+        </div>
+       <div id="title">
+           <div>
+            <a href=""><img src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg" alt=""></a>
+           </div>
+       </div>
+       <div class="navright">
+        <div>
+         <a href="">ENGLISH</a>   
+        </div>
+        <div>
+            <a href="">LOGIN</a> 
+        </div>
+        <div>
+            <a href="">WISHLIST</a> 
+        </div>
+        <div>
+            <a href="">SHOPPING BAG</a> 
+        </div>
+    </div>
+    </div>
 <div class="h1main">
     <div>
          <div><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1024,q_90,f_auto,dpr_auto/v1641839961/t2lrrulemwesgi3wavfs.jpg" alt="" ></div>
@@ -421,5 +618,137 @@
       <button class="btn">SHOP WOMENSWARE </button>
     </div>
 </div>
+<div class="h8main">
+    <div id="m12" >WITH MY LITTLE EYE</div>
+    <div id="m13">Mat + kat Shoot the Best of FW21-But You'll Have to</div>
+    <div id="m14">Find It</div>
+    <div id="btn2"><button>VIEW EDITORIALS</button></div>
+</div>
+<div class="h2main">
+    <div>
+        <div><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1024,q_90,f_auto,dpr_auto/v1638823908/g7vzugiqtmcmxkxdreru.jpg" alt=""></div>
+        <div class="hinner">
+            <div class="m1">RECENT</div>
+            <div class="m2">TIME TO LOUNGE</div>
+         </div>
+        <div class="m4">Market | Dec 8</div>
+    </div>
+    <div>
+        <div><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1024,q_90,f_auto,dpr_auto/v1638307317/td5r8hhiwlfnktzy2y9w.jpg" alt=""></div>
+        <div class="hinner">
+            <div class="m1">RECENT</div>
+            <div class="m2">THE ORAL HISTORY OF APARTAMENTO</div>
+         </div>
+        <div  class="m4">Culture | Dec 3</div>
+    </div>
+    <div>
+        <div><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1024,q_90,f_auto,dpr_auto/v1638302729/sfikmhm76xmdw3pz2trz.jpg" alt=""></div>
+        <div class="hinner">
+            <div class="m1">RECENT</div>
+            <div class="m2">AMERICAN BEAUTY: IN THE HERMAN MILLER ARCHIVES WITRH AMY AUSCHERMAN</div>
+         </div>
+        <div  class="m4">Culture | Dec 2</div>
+    </div>
+</div>
+<div class="h4main">
+    <div id="h4main1">
+        <!-- <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1627492596/oauqeahswfc63fmcscze.jpg" alt=""> -->
+        <div>
+         <div class="m5"><H1>WHAT TO WATCH</H1></div>
+         <div class="m7">VIEW ALL STORIES</div>
+        </div>
+    </div>
+       <div id="h4main1">
+           <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1612817354/rvzfkhprbuoeoiratd7s.jpg" alt="">
+           <div>
+            <div class="m5">BETTER OFF DREAD:A JANICZA BRAVO STORY</div>
+            <div class="m6">Culture</div>
+           </div>
+       </div>
+       <div id="h4main1">
+        <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1605719799/bxt7dy9h69mz2xnqn9tb.jpg" alt="">
+        <div>
+         <div class="m5">NOW THAT'S WHAT I CALL AN OST:6 WRITERS ON...</div>
+         <div class="m6">Culture</div>
+        </div>
+    </div>
+    <div id="h4main1">
+        <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1611158333/czoasawla5bs6qubeuoj.jpg" alt="">
+        <div>
+         <div class="m5">DOCUMENTING AMERICA WITH GARRETT BRADLEY</div>
+         <div class="m6">Culture</div>
+        </div>
+    </div>
+    <div id="h4main1">
+        <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1603983657/xk3vwp2km1qoo7czzy1s.jpg" alt="">
+        <div>
+         <div class="m5">DINNER AND A MOVIE:SIX WRITERS ON CINEMA GOOD...</div>
+         <div class="m6">Culture</div>
+        </div>
+    </div>
+   </div>
+   <div class="h2main">
+    <div>
+        <div><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1024,q_90,f_auto,dpr_auto/v1638385892/xlxo7ygruwzki2spmzxl.jpg" alt=""></div>
+        <div class="hinner">
+            <div class="m1">RECENT</div>
+            <div class="m2">CATALOGING A DREAM HOUSE</div>
+         </div>
+        <div class="m4">Culter | Dec 1</div>
+    </div>
+    <div>
+        <div><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1024,q_90,f_auto,dpr_auto/v1638385920/si8vmadwkezgymdgokgi.jpg" alt=""></div>
+        <div class="hinner">
+            <div class="m1">RECENT</div>
+            <div class="m2">A MANUAL FOR LIVING</div>
+         </div>
+        <div  class="m4">fashion | Nov 30</div>
+    </div>
+    <div>
+        <div><img src="https://res.cloudinary.com/ssenseweb/image/upload/w_1024,q_90,f_auto,dpr_auto/v1637861562/fmzf3kybk2ssokjiu7o7.jpg" alt=""></div>
+        <div class="hinner">
+            <div class="m1">RECENT</div>
+            <div class="m2">BREAKFAST IN THE BED WITH TEKLA</div>
+         </div>
+        <div  class="m4">Fashion | Dec 29</div>
+    </div>
+</div>
+<div id="footer">
+    <div id="footerupper">
+        
+                <a href="">COUNTRY/REGION:INDIA</a>   
+         
+                <a href="">NEWSLETTER SIGNUP</a>   
+       
+                <a href="">CUSTOMER CARE</a>   
+       
+                <a href="">LOCATION</a>   
+        
+                <a href="">EDITORIAL ARCHIVE</a>   
+     
+                <a href="">CAREER</a>   
+        
+                <a href="">SITEMAP</a> 
+                <div id="icons">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/facebook-f--v1.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/000000/instagram-new.png"/>
+                    <img src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png"/>
+                </div>    
+        
+        </div>
+        <div id="footerlower">
+            <a href=""><img src="https://img.icons8.com/material-outlined/24/000000/copyright.png" width="11" height="11"/>2022 ssense.com</a>   
+     
+            <a href="">Terms & Condition</a>   
+   
+            <a href="">Privacy Policy</a>   
+   
+            <a href="">Cookies</a>   
+    
+            <a href="">Accessibility</a> 
+           
+        </div>
+    </div>
 </body>
 </html>
