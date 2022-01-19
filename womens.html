@@ -102,7 +102,7 @@
             /* border:1px solid black; */
             
         }
-        #products>div>div>img{
+        #img{
             width:100%;
             height:350px;
         }
@@ -141,6 +141,12 @@
             color:#333333;
             font-family: Inter;
             font-size:12px;
+            /* font-weight:bold; */
+        }
+        #n1{
+            color:#333333;
+            font-family: Inter;
+            font-size:10px;
             /* font-weight:bold; */
         }
         #m5{
@@ -498,7 +504,7 @@
                 <div id="m3">Awake NY</div>
         </div>
         <div id="products">
-             <div>
+             <!-- <div>
                  <div><img src="https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/211381M180150_1/thom-browne-grey-4-bar-hooded-jacket.jpg" alt=""></div>
                  <div>
                     <div id="m4">THOM BROWNE</div>
@@ -965,7 +971,7 @@
                 <div id="m4">Brown Quilted Worker Vest</div>
                 <div id="m4">$500</div>
                 </div>
-            </div>
+            </div> -->
             </div>
          
 
@@ -1032,3 +1038,69 @@
 </div>
 </body>
 </html>
+<script>
+    var data = [
+    {
+        imgUrl:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/221129F098006_1/acne-studios-beige-french-terry-logo-sweatshirt.jpg",
+        name:"ACNE STUDIOS",
+        name1:"Beige French Terry Logo Sweatshirt",
+        price:"$265",
+        
+    },
+    {
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi2.jpg.pagespeed.ic.uBrpABaJqp.webp",
+        name:"LATEST MEN’S SNEAKER",
+        name1:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        
+    },
+    {
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi3.jpg.pagespeed.ic.iO_cFEPy2K.webp",
+        name:"LATEST MEN’S SNEAKER",
+        name1:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        
+    },
+    {
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi4.jpg.pagespeed.ic.kmiQW8I5wx.webp",
+        name:"LATEST MEN’S SNEAKER",
+        name1:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        
+    }
+]
+data.map(function(element){
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src",element.imgUrl);
+    img.setAttribute("id","img")
+
+    
+    var smalldiv = document.createElement("div");
+    // smalldiv.setAttribute("id","m4");
+
+    var title1 = document.createElement("div");
+    title1.textContent = element.name;
+    smalldiv.setAttribute("id","n1");
+
+    var title2 = document.createElement("div");
+    title2.textContent = element.name1;
+    smalldiv.setAttribute("id","n1");
+
+
+    var price = document.createElement("div");
+    price.textContent = element.price;
+    smalldiv.setAttribute("id","n1");
+
+    // var strikedOffPrice = document.createElement("p");
+    // strikedOffPrice.textContent = element.strikedOffPrice;
+
+    smalldiv.append(title1,title2,price);
+
+    div.append(img,smalldiv);
+
+    document.getElementById("products").append(div);
+
+    
+})
+</script>
