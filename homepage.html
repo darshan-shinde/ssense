@@ -127,6 +127,106 @@
             width:15px;
             height:15px
         }
+        #footer{
+            width:80%;
+            height:100px;
+            /* border:1px solid black; */
+            margin:auto;
+            padding-top:15px;
+            font-family:Inter;
+            font-weight:normal;
+        }
+      #footerupper{
+            width:80%;
+            display:flex;
+            margin:auto;
+        }
+        #footerupper>a{
+            text-decoration: none;
+            margin:auto;
+            padding-top: 30px;
+            font-size:9px;
+            color:black;
+            font-size:10px;
+            font-weight:normal;
+        }
+        #footerlower{
+            width:40%;
+            display:flex;
+            margin:auto;
+        }
+        #footerlower>a{
+
+            margin: auto;
+            padding-top:15px;
+           text-decoration: none;
+           color:gray;
+           font-size:1ch;
+           font-weight:normal;
+        }
+        #icons{
+            display:flex;
+        }
+        #icons>img{
+            /* margin-left:5px; */
+            margin: auto;
+            padding-top:30px;
+            padding-left: 5px;
+            width:15px;
+            height:15px
+        }
+        @media only screen and (min-width:378px) and (max-width:768px){
+            #pmain{
+                grid-template-columns:repeat(1,1fr);
+                width:100%;
+                margin-top:100px;
+            }
+            #footerupper{
+                flex-direction:column;
+                margin: auto;
+            }
+            .navinner,#footerlower{
+                display:none;
+            }
+            .navright{
+                display:none;
+            }
+            #title>div>a>img{
+                display:column;
+                width:100%;
+            }
+            #cart{
+                width:100%;
+                margin-bottom:50px;
+            }
+        }
+        @media only screen and (min-width:0px) and (max-width:378px){
+            #pmain{
+                width:100%;
+                grid-template-columns:repeat(1,1fr);
+            }
+            #footerlower{
+                width:100%;
+                flex-direction:column;
+            }
+            #footerupper{
+                flex-direction:column;
+                margin: auto;
+            }
+            .navinner,#footerlower{
+                display:none;
+            }
+            .navright{
+                display:none;
+            }
+            #title>div>a>img{
+                display:column;
+            }
+            #cart{
+                width:100%;
+                margin-bottom:50px;
+            }
+        }
     </style>
 </head>
 <body>
