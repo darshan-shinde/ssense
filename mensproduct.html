@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thom Browne</title>
+    <style>
+       #pmain{
+           width: 95%;
+           display:grid;
+           grid-template-columns:repeat(3,1fr);
+           /* border: 1px solid #333333; */
+
+       } 
+       #info{
+           /* margin:auto; */
+           margin-left:50px;
+           margin-top: 200px;
+           width:70%;
+           height:500px;
+           height:360px;
+           /* border: 1px solid #333333; */
+           /* sposition: relative; */
+       }
+       #cart{
+        margin-left:50px;
+        margin-right: 20px;
+        margin-top: 200px;
+       }
+       #pics{
+        margin-left:50px;
+        /* border: 1px solid #333333;  */
+       }
+       .p1{
+            color:#333333;
+            font-family:Inter;
+            font-size:12px;
+            margin-top:5px;
+            /* font-weight:bold; */
+        }
+        .p2{
+            color:#333333;
+            font-family:Inter;
+            font-size:10px;
+            margin-top:5px;
+            /* font-weight:bold; */
+        }
+        #pics>img{
+            width:60%;
+            height:500px;
+            margin: auto;
+            /* margin-left:70px; */
+            /* border: 1px solid #333333; */
+        }
+        #size{
+            width:85%;
+            height:30px;
+            color:#333333;
+            font-family:Inter;
+            font-size:10px;
+            margin-top:2px;
+        }
+        select option{
+            color:#333333;
+            font-family:Inter;
+            font-size:10px;
+            margin-top:2px;
+        }
+        .button{
+          display:flex;
+          margin-top:100px;
+          position:relative;
+        }
+        #but1{
+            width:50%;
+            height:40px;
+            font-family:Inter;
+            font-size:12px;
+            background-color:black;
+            color:white;
+            outline:none;
+            border:none;
+        }
+        #but2{
+            width:40%;
+            height:40px;
+            color:#333333;
+            font-family:Inter;
+            font-size:12px;
+            background-color:white;
+            outline:none;
+            border:none;
+        }
+        @media only screen and (min-width:378px) and (max-width:768px){
+            #pmain{
+                grid-template-columns:repeat(2,1fr);
+            }
+        }
+        @media only screen and (min-width:0px) and (max-width:378px){
+            #pmain{
+                width:100%;
+                grid-template-columns:repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+   <div id="pmain">
+       <div id="info">
+            <div class="p1">ITEM INFO</div> 
+           <div class="p2">Long sleeve French terry jacket in grey featuring signature stripes in white at sleeve</div>
+           <ul>
+               <li class="p2">Drawstring at hood</li>
+               <li class="p2">Button closure</li>
+               <li class="p2">Patch pockets at front</li>
+               <li class="p2">Twin vents at back hem</li>
+               <li class="p2">Iridescent hardware</li>
+           </ul>
+           <br>
+           <div class="p2">Supplier color: Light grey</div><br>
+           <div class="p2">100% cotton.</div>
+           <div class="p2">Made in Japan.</div><br>
+           <div class="p1">211381M180150</div> 
+       </div>
+       <div id="pics">
+           <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/211381M180150_1/thom-browne-grey-4-bar-hooded-jacket.jpg" alt="">
+           <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/211381M180150_2/thom-browne-grey-4-bar-hooded-jacket.jpg" alt="">
+           <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/211381M180150_3/thom-browne-grey-4-bar-hooded-jacket.jpg" alt="">
+
+       </div>
+       <div id="cart">
+           <div class="p1">THOM BROWNE</div>
+           <br>
+           <DIV CLASS="p1">$1470 USD</DIV>
+           <br>
+           <select type="text" id="size" placeholder="">
+               <option value="">SELECT A SIZE</option>
+               <option value="">XXS</option>
+               <option value="">S</option>
+               <option value="">M</option>
+               <option value="">L</option>
+               <option value="">XL</option>
+               <option value="">XXL</option>
+           </select>
+           <br>
+           <br>
+           <div CLASS="but">
+               <button id="but1" type="submit">ADD TO BAG</button>
+               <BUtton id="but2">ADD TO WISHLIST</BUtton>
+           </div>
+           <br>
+           <div class="p2">Fit Predictor <span class="p2"><a class="p2" href="">Calculate your size</a></span></div>
+           <div class="p2">Model is 6ft 1" and wears size 3.<span class="p2"><a class="p2" href="">SIZE GUIDE</a></span></div>
+       </div>
+   </div> 
+</body>
+</html>
