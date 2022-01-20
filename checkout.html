@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ckmain{
+            width:90%;
+            height:600px;
+            margin:auto;
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns:70% 30%;
+            grid-gap:10px;
+        }
+        .ckleft{
+            border-top: 1px solid #333333;
+        }
+        #h4main1{
+            display: flex;
+            /* border-top: 1px solid #333333; */
+            border-bottom: 1px solid #333333;
+            padding:8px;
+            border-length:90%;
+            border-color: #333333;
+        }
+        #h4main1>img{
+            width:10%;
+            height:120px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        #m4{
+            color:#333333;
+            font-family: Inter;
+            font-size:12px;
+            text-decoration:none;
+            /* font-weight:bold; */
+        }
+        #m5{
+            color:#333333;
+            font-family: Inter;
+            font-size:10px;
+            /* padding:5px; */
+        }
+        #size{
+            /* width:85%; */
+            /* height:30px; */
+            color:#333333;
+            font-family:Inter;
+            font-size:10px;
+            margin-top:10px;
+            outline:none;
+            margin-bottom: 10px;
+        }
+        select option{
+            color:#333333;
+            font-family:Inter;
+            font-size:10px;
+            margin-top:2px;
+        }
+        .button{
+          display:flex;
+          margin-top:100px;
+          position:relative;
+        }
+        #but1{
+            width:50%;
+            height:40px;
+            font-family:Inter;
+            font-size:12px;
+            background-color:black;
+            color:white;
+            outline:none;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ckmain">
+        <div id="m4">SHOPPING BAG</div>
+        <div class="ckleft">
+            
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="h4main1">
+                <img src="https://res.cloudinary.com/ssenseweb/image/upload/w_480,q_90,f_auto,dpr_auto/v1627492596/oauqeahswfc63fmcscze.jpg" alt="">
+                <div>
+                    <div><a id="m4" href="mensproduct.html">THOM BROWNE</a></div>
+                    <div id="m5">Grey 4-bar hooded jacket</div>
+                    <select type="text" id="size" placeholder="">
+                        <option value="">-</option>
+                        <option value="">XXS</option>
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <div id="m4">$1470</div>
+                </div>
+            </div>
+            <div id="h4main1">
+             <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221129F098006_1/acne-studios-beige-french-terry-logo-sweatshirt.jpg" alt="">
+             <div>
+              <div><a id="m4" href="mensproduct.html">ACNE STUDIOS</a></div>
+              <div id="m5">Beige French Terry Logo Sweatshirt</div>
+              <select type="text" id="size" placeholder="">
+                <option value="">-</option>
+                <option value="">XXS</option>
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select>
+              <div id="m4">$265</div>
+             </div>
+         </div>
+        </div>
+        <div class="ckright"></div>
+    </div>
+</body>
+</html>
