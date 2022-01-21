@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>womensware | SSENSE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -232,6 +232,76 @@
             width:15px;
             height:15px
         }
+        @media only screen and (min-width:378px) and (max-width:768px){
+            #mmain{
+                width:100%;
+                grid-template-columns: repeat(1,1fr);
+            }
+            #products{
+                width:100%;
+                grid-template-columns:repeat(2,1fr);
+            }
+            /* #products>div{
+                width:100%;
+            } */
+            #brands{
+                display:none;
+            }
+            #filters{
+                display:none;
+            }
+            #footerupper{
+                flex-direction:column;
+                margin: auto;
+            }
+            .navinner,#footerlower{
+                display:none;
+            }
+            .navright{
+                display:none;
+            }
+            #title>div>a>img{
+                display:column;
+                width:100%;
+            }
+            
+        }
+        @media only screen and (min-width:0px) and (max-width:378px){
+            #mmain{
+                width:100%;
+                grid-template-columns: repeat(1,1fr);
+            }
+            #products{
+                width:100%;
+                grid-template-columns:repeat(1,1fr);
+            }
+            /* #products>div{
+                width:100%;
+            } */
+            #brands{
+                display:none;
+            }
+            #filters{
+                display:none;
+            }
+            #footerlower{
+                width:100%;
+                flex-direction:column;
+            }
+            #footerupper{
+                flex-direction:column;
+                margin: auto;
+            }
+            .navinner,#footerlower{
+                display:none;
+            }
+            .navright{
+                display:none;
+            }
+            #title>div>a>img{
+                display:column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -263,7 +333,7 @@
          <a href="">ENGLISH</a>   
         </div>
         <div>
-            <a href="">LOGIN</a> 
+            <a href="signup.html">LOGIN</a> 
         </div>
         <div>
             <a href="">WISHLIST</a> 

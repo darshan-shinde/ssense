@@ -311,7 +311,7 @@
   </body>
 </html>
 <script>
-  document.getElementById("myform").addEventListener("submit", signIn);
+  document.getElementById("myform").addEventListener("submit",signIn);
   var regUser = JSON.parse(localStorage.getItem("user")) || [];
   function signIn(e) {
     e.preventDefault();
@@ -330,7 +330,7 @@
         } else if (email == "admin@gmail.com" && password == "admin") {
           alert("Admin Signin Sucessfully");
           //redirect admin page
-          window.location.href = "https://www.youtube.com";
+          window.location.href = "home.html";
           //   "file:///D:/Masai%20Codes/Day-15/E-commerce/form.html";
           return;
         }
