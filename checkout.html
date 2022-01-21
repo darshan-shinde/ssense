@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #navbar{
+            width:100%;
+            height:50px;
+            margin: auto;
+            /* border:1px solid black; */
+            /* padding-top:25px; */
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+    
+            
+        }
+        .navinner{
+            width:100%;
+            height:50px;
+            /* border:1px solid black; */
+            display:flex;
+            
+            /* margin-left:20px; */
+        }
+        .navinner>div{
+             margin-left:30px;
+            margin-top:15px;
+            margin-right: 10px;
+            justify-content:left;
+            /* justify-content:space-around; */
+            /* margin: auto; */
+            /* align-content:space-around; */
+        }
+        .navinner>div>a{
+            text-decoration: none;
+            color:black;
+            font-size:10px;
+            font-family:Inter;
+            font-weight:normal;
+        }
+        #title>div{
+            /* font-family: inter;
+            font-weight:lighter; */
+            border:1px solid transparent;
+            width:100px;
+            height:50px;
+            margin:auto;
+            
+        }
+        #title>div>a>img{
+            /* margin-top:15px; */
+            width:100%;
+            height:50px;
+            margin: auto;
+            /* margin-right: 100px; */
+        }
+        .navright{
+            width:100%;
+            height:50px;
+            /* border:1px solid black; */
+            display:flex;
+            
+            /* margin-left:20px; */
+        }
+        .navright>div{
+             margin-left:30px;
+            margin-top:15px;
+            margin-right: 40px;
+           
+        }
+        .navright>div>a{
+            text-decoration: none;
+            color:black;
+            font-size:10px;
+            font-family:Inter;
+            font-weight:normal;
+            
+
+        }
+        .container {
+            width:80%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:65% 30%;
+            padding:20px;
+            grid-gap:50px;
+        }
+        .sh1{
+            font-family:Inter;
+            font-size:12px;
+        }
+        .k2{
+            font-size:12px; 
+            margin-top:30px;
+            padding-bottom:5px;
+            border-length:100%;
+            border-bottom: 1px solid gray;
+        }
+        .k3{
+            margin-top:20px;
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:repeat(5,1fr);
+            grid-gap:15px;
+        }
+        .s1{
+            font-family:Inter;
+            font-size:10px; 
+            color:#333333;
+            margin-bottom:5px;
+        }
+        #i1{
+            width:80%;
+            height:30px;
+            border-color:gray;
+            border:.5px solid;
+            outline:none;
+            font-family:Inter;
+            font-size:12px; 
+            
+        }
+        #i2{
+            width:50%;
+            height:30px;
+            border-color:gray;
+            border:.5px solid;
+            outline:none; 
+            font-family:Inter;
+            font-size:12px; 
+        }
+        /* #i3{
+            width:20px;
+           color:#333333;
+        } */
+
+        input[type="radio"]:checked:after{
+        width: 10px;
+        height: 10px;
+        border-radius:10px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:#333333;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        }
+        input[type='radio']:after {
+        width: 10px;
+        height: 10px;
+        border-radius:10px;
+        top:-2px;
+        left:-1px;
+        position: relative;
+        background-color:#d1d3d1;
+        /* content: ''; */
+        display: inline-block;
+        visibility: visible;
+        border: 1px solid black;
+    }
+    .sh2{
+            margin-top:20px;
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:repeat(2,1fr);
+            grid-gap:15px;
+        }
+        .s3{
+            font-family:Inter;
+            font-size:10px; 
+            color:#333333;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+        #h4main1{
+            display: flex;
+            /* border-top: 1px solid #333333; */
+            border-bottom: 1px solid #333333;
+            padding:8px;
+            border-length:90%;
+            border-color:gray;
+        }
+        #h4main1>img{
+            width:20%;
+            height:120px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        #m4{
+            color:#333333;
+            font-family: Inter;
+            font-size:12px;
+            text-decoration:none;
+            /* font-weight:bold; */
+        }
+        #m5{
+            color:#333333;
+            font-family: Inter;
+            font-size:10px;
+            /* padding:5px; */
+        }
+        .shleft{
+            margin-top:15px;
+        }
+        .c3{
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           grid-template-rows:repeat(3,1fr);
+           grid-gap:30px;
+       }
+       #m6{
+            color:#333333;
+            font-family: Inter;
+            font-size:10px;
+            font-weight:bold;
+        }
+        #but1{
+            width:100%;
+            height:40px;
+            font-family:Inter;
+            font-size:12px;
+            background-color:black;
+            color:white;
+            outline:none;
+            border:none;
+            font-weight: bold;
+            /* margin: auto; */
+            text-decoration:none;
+            
+        }
+        @media only screen and (min-width:378px) and (max-width:768px){
+            #pmain{
+                grid-template-columns:repeat(1,1fr);
+                width:100%;
+                margin-top:100px;
+            }
+            #footerupper{
+                display:none;
+                flex-direction:none;
+                margin: auto;
+            }
+            .navinner,#footerlower{
+                display:none;
+            }
+            .navright{
+                display:none;
+            }
+            #title>div>a>img{
+                display:column;
+            }
+            .container{
+                grid-template-columns:repeat(1,1fr);
+                width:100%;
+            }
+           
+        }
+        @media only screen and (min-width:0px) and (max-width:378px){
+            #pmain{
+                width:100%;
+                grid-template-columns:repeat(1,1fr);
+            }
+            #footerlower{
+                width:100%;
+                flex-direction:column;
+            }
+            #footerupper{
+                flex-direction:column;
+                margin: auto;
+            }
+            .navinner,#footerlower{
+                display:none;
+            }
+            .navright{
+                display:none;
+            }
+            #title>div>a>img{
+                display:column;
+            }
+            .container{
+                grid-template-columns:repeat(1,1fr);
+                width:100%;
+            }
+            .k3{
+                grid-template-columns:repeat(1,1fr);
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="navinner">
+            <div>
+             <a href="mens.html">MENSWARE</a>   
+            </div>
+            <div>
+                <a href="womens.html">WOMENSWARE</a> 
+            </div>
+            <div>
+                <a href="">EVERYTHING ELSE</a> 
+            </div>
+            <div>
+                <a href="">SALE</a> 
+            </div>
+            <div>
+                <a href="">SEARCH</a> 
+            </div>
+        </div>
+       <div id="title">
+           <div>
+            <a href="home.html"><img src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg" alt=""></a>
+           </div>
+       </div>
+       <div class="navright">
+        <div>
+         <a href="">ENGLISH</a>   
+        </div>
+        <div>
+            <a href="">LOGIN</a> 
+        </div>
+        <div>
+            <a href="">WISHLIST</a> 
+        </div>
+        <div>
+            <a href="checkout.html">SHOPPING BAG</a> 
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="sh1">
+            <div class="k1">CHECKOUT</div>
+            <div class="k2">SHIPPING ADDRESS</div>
+            <DIV class="k3">
+              <div>
+                  <div class="s1">First Name</div>
+                  <!-- <label for="firstname">First Name</label> -->
+                  <input type="text" name="firstname" id="i1">
+              </div>
+              <div>
+                <div class="s1">Last Name</div>
+                <input type="text" name="" id="i1">
+                
+            </div>
+            <div>
+                <div class="s1"> Street Address</div>
+                <input type="text" name="" id="i1">
+            </div>
+            <div>
+                <div class="s1">Company (Optional)</div>
+                <input type="text" name="" id="i1">
+            </div><div>
+                <div class="s1">City</div>
+                <input type="text" name="" id="i1">
+            </div><div>
+                <div class="s1">ZIP Or Postal Code</div>
+                <input type="text" name="" id="i2">
+            </div><div>
+                <div class="s1">Country/Region</div>
+                <!-- <input type="text" name="" id="i1"> -->
+                <select name="" id="i1">
+                    <option  class="s1" value="">select</option>
+                    <option  class="s1" value="">Canada</option>
+                    <option class="s1" value="">United States</option>
+                    <option class="s1" value="">India</option>
+                    <option class="s1" value="">Afghanistan</option>
+                    <option class="s1"value="">Australia</option>
+                    <option  class="s1"value="">American Samoa</option>
+                    <option  class="s1"value="">Bangladesh</option>
+                    <option class="s1" value="">Africa</option>
+                    <option  class="s1"value="">Germany</option>
+                    <option  class="s1"value="">United Kingdom</option>
+                    <option  class="s1"value="">Netherland</option>
+                    <option class="s1" value="">France</option>
+                    <option class="s1" value="">Turkey</option>
+                    <option  class="s1" value="">UAE</option>
+                    <option class="s1" value="">Dubai</option>
+                    <option class="s1" value="">Saudi Arabia</option>
+                    <option class="s1"  value="">Greek</option>
+                </select>
+            </div>
+            <div>
+                <div class="s1">State/Province</div>
+                <!-- <input type="text" name="" id="i2"> -->
+                <select name="" id="i2">
+                    <option  class="s1" value="">select</option>
+                    <option  class="s1" value="">Maharashtra</option>
+                    <option class="s1" value="">Bihar</option>
+                    <option class="s1" value="">Delhi</option>
+                    <option class="s1" value="">Karnataka</option>
+                    <option class="s1"value="">Goa</option>
+                    <option  class="s1"value="">Punjab</option>
+                    <option  class="s1"value="">Kerala</option>
+                    <option class="s1" value="">Rajasthan</option>
+                    <option  class="s1"value="">Sikkim</option>
+                    <option  class="s1"value="">Jammu & Kashmir</option>
+                    <option  class="s1"value="">Assam</option>
+                    <option class="s1" value="">Gujarat</option>
+                    <option class="s1" value="">West Bengal</option>
+                    <option  class="s1" value="">Tripura</option>
+                    <option class="s1" value="">Himachal Pradesh</option>
+                    <option class="s1" value="">Chandigarh</option>
+                    <option class="s1"  value="">Haryana</option>
+                </select>
+            </div>
+            <div>
+                <div class="s1">Phone</div>
+                <input type="text" name="" id="i2">
+            </div>
+            </DIV>
+            <div class="k2">SHIPPING METHOD</div><br>
+           <div>
+               <input type="radio" name="lol" id="i3">
+               <label for="lol">$40.00 USD | 12-17 days | Standard</label>
+           </div>
+           <div class="k2">PAYMENT METHOD</div><br>
+           <div>
+               <input type="radio" name="lool" id="i3">
+               <label for="lool">Pay with credit card or debit card</label>
+           </div>
+           <div>
+            <input type="radio" name="lool" id="i3">
+            <label for="lool">Pay with PayPal</label>
+        </div>
+        <div>
+            <input type="radio" name="lool" id="i3">
+            <label for="lool">Pay with Alipay</label>
+        </div>
+        <div class="k2">CARD DETAILS</div><br>
+        <div class="sh2">
+            <div>
+                <div class="s3">Card number</div>
+                <!-- <label for="firstname">First Name</label> -->
+                <input type="text" name="firstname" id="i1" placeholder="    1234 1234 1234 1234">
+            </div>
+            <div>
+                <div class="s3">Expiration date</div>
+                <!-- <label for="firstname">First Name</label> -->
+                <input type="text" name="firstname" id="i2" placeholder="  MM / YY">
+            </div>
+            <div>
+                <div class="s3">Cardholder's name</div>
+                <!-- <label for="firstname">First Name</label> -->
+                <input type="text" name="firstname" id="i1">
+            </div>
+            <div>
+                <div class="s3">Security code</div>
+                <!-- <label for="firstname">First Name</label> -->
+                <input type="text" name="firstname" id="i2" placeholder="  CVC">
+            </div>
+        </div>
+        <div class="k2">BILLING ADDRESS</div><br>
+        <div>
+            <input type="radio" name="lool" id="i3">
+            <label for="lool">Same as shipping address </label>
+            <br><br><br><br><br>
+            <hr>
+            <div>SSENSE ,33 Chabanel W,#900,Montreal,QC,CA,H2N 2E7</div>
+            <div>Terms & condition Privacy Policy</div>
+        </div>
+        </div>
+        <div class="shleft">
+            <div class="k2">ORDER SUMMARY</div><br>  
+            <div id="h4main1">
+                <img src="https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/211381M180150_1/thom-browne-grey-4-bar-hooded-jacket.jpg" alt="">
+                <div>
+                    <div><a id="m4" href="mensproduct.html">THOM BROWNE</a></div>
+                    <div id="m5">Grey 4-bar hooded jacket</div>
+                    <select type="text" id="size" placeholder="">
+                        <option value="">-</option>
+                        <option value="">XXS</option>
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <div id="m4">$1470</div>
+                </div>
+            </div>
+            <div id="h4main1">
+             <img src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221129F098006_1/acne-studios-beige-french-terry-logo-sweatshirt.jpg" alt="">
+             <div>
+              <div><a id="m4" href="mensproduct.html">ACNE STUDIOS</a></div>
+              <div id="m5">Beige French Terry Logo Sweatshirt</div>
+              <select type="text" id="size" placeholder="">
+                <option value="">-</option>
+                <option value="">XXS</option>
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select>
+              <div id="m4">$265</div>
+             </div>
+             
+         </div>
+         <br>
+         <div class="ckright">
+            <div class="c3">
+                <div id="m5">Total</div>
+                <div id="m5">$1735.OO USD</div>
+                <DIV id="m5">Shipping estimate</DIV>
+                <div id="m5">$40.OO</div>
+                <div id="m6">Order Total</div>
+                <div id="m6">$1775.00 USD</div>
+            </div>
+            <br>
+            <button id="but1" type="submit"><a href="payment.html" style="text-decoration:none;color:white">PLACE ORDER</a></button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
