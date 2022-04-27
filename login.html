@@ -238,7 +238,7 @@
       </div>
      <div id="title">
          <div>
-          <a href="home.html"><img src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg" alt=""></a>
+          <a href="index.html"><img src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg" alt=""></a>
          </div>
      </div>
      <div class="navright">
@@ -311,11 +311,11 @@
   </body>
 </html>
 <script>
-  document.getElementById("myform").addEventListener("submit",signIn);
+  document.getElementById("form").addEventListener("submit", signIn);
   var regUser = JSON.parse(localStorage.getItem("user")) || [];
   function signIn(e) {
     e.preventDefault();
-    var email = document.getElementById("userid").value;
+    var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
     if (!email || !password) {
@@ -324,13 +324,13 @@
       for (var i = 0; i < regUser.length; i++) {
         if (regUser[i].email === email && regUser[i].password === password) {
           alert("Signin Sucessfully");
-          window.location.href = "https://www.google.com";
+          window.location.href = "index.html";
           //   "file:///D:/Masai%20Codes/Day-15/E-commerce/products.html";
           return;
         } else if (email == "admin@gmail.com" && password == "admin") {
           alert("Admin Signin Sucessfully");
           //redirect admin page
-          window.location.href = "home.html";
+          window.location.href = "index.html"
           //   "file:///D:/Masai%20Codes/Day-15/E-commerce/form.html";
           return;
         }
